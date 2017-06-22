@@ -2,86 +2,76 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/social-buttons/bootstrap-social.css" rel="stylesheet">
-    <link href="css/social-buttons/assets/css/font-awesome.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="css/bootstrap/js/bootstrap.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
   </head>
-  <body>
-    <div class="container">
-      <div class="row">
-        <div class=col-md-12">
-          PLACE IMAGE HERE
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="http://jayceelock.github.io">Home</a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Themes</a></li>
-                      <li><a href="#">Current Research</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="https://jayceelock.github.io/publications">Publications</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+  <body style="padding-top: 50px;">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Home</a>
         </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <img src="https://placekitten.com/200/300" class="img-responsive">
-          <div class="panel panel-default">
-            <div class="panel-body">
-              <ul>
-                <li><a href="https://www.lincoln.ac.uk/home/">University of Lincoln Page</a></li>
-                <li><a href="http://lcas.lincoln.ac.uk/wp/">L-CAS Homepage</a></li>
-                <li><a href="https://scholar.google.co.uk/citations?user=MLYdvnwAAAAJ&hl=en&oi=pll">Google Scholar Homepage</a></li>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Research<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Themes</a></li>
+                <li><a href="#">Current Research</a></li>
               </ul>
-              <div class="panel panel-default">
-                <div class="panel-heading">Contact</div>
-                  <div class="panel-body">
-                    <ul>
-                      <li>Email: <a href="mailto:jlock@lincoln.ac.uk?Subject=Hi" target="_top">jlock@lincoln.ac.uk</a></li>
-                      <li>Phone: +44 WAT IS MY FOONNOMMER EH?</li>
-                      <li>Mail: WAT IS MY POSADRES EH?</li>
-                    </ul>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/jayceelock">
-                      <span class="fa fa-twitter"></span>
-                    </a>
-                    <a class="btn btn-social-icon btn-github" href="http://github.com/jayceelock">
-                      <span class="fa fa-github"></span>
-                    </a>
-                    <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jaycee-lock-b2784696/">
-                      <span class="fa fa-linkedin"></span>
-                    </a>
-                    <a class="btn btn-social-icon btn-google" href="https://plus.google.com/u/0/108013586658668334600">
-                      <span class="fa fa-google"></span>
-                    </a>
-                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9">
-          {{ content }}
+            </li>
+            <li><a href="publications.html">Publications</a></li>
+          </ul>
         </div>
       </div>
+    </nav>
+    <div class="container">
+
+      {{ content }}
+
     </div>
+    <footer class="footer" style="bottom: 0; position: absolute; width: 100%; line-height: 20px; height: 60px;">
+      <div class="container">
+        <div class="col-md-6">
+          <ul>
+            <li><a href="https://www.lincoln.ac.uk/home/">University of Lincoln Page</a></li>
+            <li><a href="http://lcas.lincoln.ac.uk/wp/">L-CAS Homepage</a></li>
+            <li><a href="https://scholar.google.co.uk/citations?user=MLYdvnwAAAAJ&hl=en&oi=pll">Google Scholar Homepage</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <a class="btn btn-social-icon btn-github" href="mailto:jlock@lincoln.ac.uk?Subject=Hi" target="_top">
+            <span class="fa fa-envelope"></span>
+          </a>
+          <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/jayceelock">
+            <span class="fa fa-twitter"></span>
+          </a>
+          <a class="btn btn-social-icon btn-github" href="http://github.com/jayceelock">
+            <span class="fa fa-github"></span>
+          </a>
+          <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/jaycee-lock-b2784696/">
+            <span class="fa fa-linkedin"></span>
+          </a>
+          <a class="btn btn-social-icon btn-google" href="https://plus.google.com/u/0/108013586658668334600">
+            <span class="fa fa-google"></span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
